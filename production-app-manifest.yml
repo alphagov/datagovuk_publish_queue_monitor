@@ -1,0 +1,11 @@
+applications:
+- name: publish-data-production-queue-monitor
+  command: bundle exec rackup -p $PORT -o 0.0.0.0
+  memory: 512M
+  buildpack: https://github.com/cloudfoundry/ruby-buildpack.git#v1.7.14
+  env:
+    RAILS_ENV: production
+    RACK_ENV: production
+  services:
+  - publish-production-secrets
+  - publish-beta-production-redis
