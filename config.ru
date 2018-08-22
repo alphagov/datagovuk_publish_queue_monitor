@@ -1,5 +1,9 @@
-# This file is used by Rack-based servers to start the application.
+require "json"
+require "sidekiq"
+require "sidekiq/prometheus/exporter"
 
-require_relative 'config/environment'
+Sidekiq.configure_client do |config|
+  config.redis = {url: JSON.parse(ENV["VCAP_SERVICES"] || "{}").dig("redis", 0, "credentials", "uri")}
+end
 
-run Rails.application
+run Sidekiq::Prometheus::Exporter.to_app

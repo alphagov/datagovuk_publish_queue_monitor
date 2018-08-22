@@ -1,24 +1,15 @@
-# README
+# data.gov.uk Publish Metrics Exporter
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The repository contains the app to expose Sidekiq queue metrics for data.gov.uk Publish.
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+This app is deployed on the PaaS.
 
-* System dependencies
+```
+cf push -f staging-app-manifest.yml
+cf push -f production-app-manifest.yml
+```
 
-* Configuration
+The metrics are accessible online at https://publish-data-staging-queue-monitor.cloudapps.digital/metrics and https://publish-data-production-queue-monitor.cloudapps.digital/metrics.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
