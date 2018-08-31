@@ -9,3 +9,4 @@ applications:
   services:
   - publish-staging-secrets
   - publish-beta-staging-redis
+  - re-ip-whitelist-service
