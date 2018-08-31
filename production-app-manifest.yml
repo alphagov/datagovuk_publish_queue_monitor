@@ -9,3 +9,4 @@ applications:
   services:
   - publish-production-secrets
   - publish-beta-production-redis
+  - re-ip-whitelist-service
