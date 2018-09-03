@@ -10,3 +10,4 @@ applications:
   - publish-production-secrets
   - publish-beta-production-redis
   - re-ip-whitelist-service
+  - dgu-prometheus

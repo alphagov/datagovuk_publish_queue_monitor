@@ -10,3 +10,4 @@ applications:
   - publish-staging-secrets
   - publish-beta-staging-redis
   - re-ip-whitelist-service
+  - dgu-prometheus
