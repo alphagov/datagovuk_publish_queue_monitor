@@ -3,14 +3,15 @@ GEM
   specs:
     connection_pool (2.2.2)
     rack (2.0.7)
-    rack-protection (2.0.3)
+    rack-protection (2.0.5)
       rack
-    redis (4.0.2)
-    sidekiq (5.2.1)
+    redis (4.1.1)
+    sidekiq (5.2.7)
       connection_pool (~> 2.2, >= 2.2.2)
+      rack (>= 1.5.0)
       rack-protection (>= 1.5.0)
       redis (>= 3.3.5, < 5)
-    sidekiq-prometheus-exporter (0.1.1)
+    sidekiq-prometheus-exporter (0.1.11)
       sidekiq (>= 3.3.1)
 
 PLATFORMS
@@ -18,7 +19,7 @@ PLATFORMS
 
 DEPENDENCIES
   rack
-  sidekiq-prometheus-exporter (~> 0.1.1)
+  sidekiq-prometheus-exporter (~> 0.1.11)
 
 RUBY VERSION
    ruby 2.6.1p33
