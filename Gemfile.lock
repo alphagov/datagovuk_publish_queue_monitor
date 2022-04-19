@@ -22,7 +22,7 @@ DEPENDENCIES
   sidekiq-prometheus-exporter (~> 0.1.13)
 
 RUBY VERSION
-   ruby 2.6.1p33
+   ruby 2.7.6
 
 BUNDLED WITH
    1.17.3
